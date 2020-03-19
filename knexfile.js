@@ -8,12 +8,9 @@ module.exports = {
     connection: {
       filename: './data/food.db3',
 
-    }
-  },
-  migrations: {
-    directory: './data/migrations'
-  },
-  seeds: {
+    },migrations: {
+      directory: './data/migrations'
+  },seeds: {
     directory: './data/seeds'
   },
   pool: {
@@ -21,4 +18,5 @@ module.exports = {
       conn.run('PRAGMA foreign_keys = ON', done);
     },
   },
+}
 }
