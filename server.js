@@ -7,3 +7,9 @@ const server = express();
 
 server.use(helmet());
 server.use(express.json());
+
+server.get('/', (req, res) =>{
+    res.json('This is the defauls zone')
+})
+
+module.exports = server;
